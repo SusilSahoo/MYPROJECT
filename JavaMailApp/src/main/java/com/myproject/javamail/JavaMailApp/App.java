@@ -16,8 +16,8 @@ public class App
     	//load smtp configuration file    	
     	prop = loadSmtpConfig(input, prop);    	    
     	
-    	Session session = Session.getInstance(prop, new GMailAuthenticator("susil.itr@gmail.com", "S@hoo4110"));
-    	EmailUtil.sendEmail(session, "susillipi11march@gmail.com", "Lipina Test mail", "Lipi I Love you");
+    	Session session = Session.getInstance(prop, new GMailAuthenticator("dummy@gmail.com", "dummy password"));
+    	EmailUtil.sendEmail(session, "sdummy@gmail.com", "Test mail", "test");
     	
     	    	
     }    
